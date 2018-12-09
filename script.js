@@ -1,6 +1,7 @@
 const divRed = document.getElementById("red");
 const imageDiv = document.getElementById('image-div');
 const wrapper = document.getElementById('wrapper');
+const infoDiv = document.getElementById('info');
 
 
 // sa ai un object in care adaugi toate divurile, ce contin
@@ -11,7 +12,8 @@ const mainObj = [{
         text: "pink",
         link: "",
         x: "0px",
-        y: "10px"
+        y: "10px", 
+        info: "This is the info for this image1"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -19,7 +21,8 @@ const mainObj = [{
         text: "pink",
         link: "",
         x: "0px",
-        y: "-52px"
+        y: "-52px",
+        info: "This is the info for this image2"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -27,7 +30,8 @@ const mainObj = [{
         text: "pink",
         link: "",
         x: "0px",
-        y: "-115px"
+        y: "-115px",
+        info: "This is the info for this image3"
     },
     {
         image: 'WarningSigns-Sprite.pngg',
@@ -35,7 +39,8 @@ const mainObj = [{
         text: "pink",
         link: "",
         x: "0px",
-        y: "-180px"
+        y: "-180px",
+        info: "This is the info for this image4"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -43,7 +48,8 @@ const mainObj = [{
         text: "pink",
         link: "",
         x: "0px",
-        y: "-240px"
+        y: "-240px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.pngg',
@@ -51,7 +57,8 @@ const mainObj = [{
         text: "pink",
         link: "",
         x: "0px",
-        y: "-295px"
+        y: "-295px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.pngg',
@@ -59,7 +66,8 @@ const mainObj = [{
         text: "pink",
         link: "",
         x: "0px",
-        y: "-350px"
+        y: "-350px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.pngg',
@@ -67,7 +75,8 @@ const mainObj = [{
         text: "pink",
         link: "",
         x: "0px",
-        y: "-419px"
+        y: "-419px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.pngg',
@@ -75,7 +84,8 @@ const mainObj = [{
         text: "pink",
         link: "",
         x: "0px",
-        y: "-480px"
+        y: "-480px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.pngg',
@@ -83,7 +93,8 @@ const mainObj = [{
         text: "pink",
         link: "",
         x: "0px",
-        y: "-535px"
+        y: "-535px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.pngg',
@@ -91,7 +102,8 @@ const mainObj = [{
         text: "pink",
         link: "",
         x: "0px",
-        y: "-600px"
+        y: "-600px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -99,7 +111,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-660px"
+        y: "-660px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -107,7 +120,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-710px"
+        y: "-710px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -115,7 +129,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-780px"
+        y: "-780px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -123,7 +138,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-840px"
+        y: "-840px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -131,7 +147,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-910px"
+        y: "-910px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -139,7 +156,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-960px"
+        y: "-960px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -147,7 +165,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1000px"
+        y: "-1000px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -155,7 +174,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1080px"
+        y: "-1080px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -163,7 +183,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1130px"
+        y: "-1130px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -171,7 +192,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1190px"
+        y: "-1190px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -179,7 +201,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1260px"
+        y: "-1260px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -187,7 +210,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1320px"
+        y: "-1320px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -195,7 +219,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1370px"
+        y: "-1370px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -203,7 +228,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1435px"
+        y: "-1435px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -211,7 +237,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1495px"
+        y: "-1495px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -219,7 +246,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1558px"
+        y: "-1558px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -227,7 +255,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1610px"
+        y: "-1610px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -235,7 +264,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1680px"
+        y: "-1680px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -243,7 +273,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1740px"
+        y: "-1740px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -251,7 +282,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1790px"
+        y: "-1790px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -259,7 +291,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1860px"
+        y: "-1860px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -267,7 +300,8 @@ const mainObj = [{
         text: "yellow",
         link: "",
         x: "0px",
-        y: "-1920px"
+        y: "-1920px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -275,7 +309,8 @@ const mainObj = [{
         text: "green",
         link: "",
         x: "0px",
-        y: "-1980px"
+        y: "-1980px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -283,7 +318,8 @@ const mainObj = [{
         text: "green",
         link: "",
         x: "0px",
-        y: "-2040px"
+        y: "-2040px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -291,7 +327,8 @@ const mainObj = [{
         text: "green",
         link: "",
         x: "0px",
-        y: "-2090px"
+        y: "-2090px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -299,7 +336,8 @@ const mainObj = [{
         text: "green",
         link: "",
         x: "0px",
-        y: "-2160px"
+        y: "-2160px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -307,7 +345,8 @@ const mainObj = [{
         text: "green",
         link: "",
         x: "0px",
-        y: "-2210px"
+        y: "-2210px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -315,7 +354,8 @@ const mainObj = [{
         text: "green",
         link: "",
         x: "0px",
-        y: "-2270px"
+        y: "-2270px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -323,7 +363,8 @@ const mainObj = [{
         text: "green",
         link: "",
         x: "0px",
-        y: "-2340px"
+        y: "-2340px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -331,7 +372,8 @@ const mainObj = [{
         text: "green",
         link: "",
         x: "0px",
-        y: "-2390px"
+        y: "-2390px",
+        info: "This is the info for this image"
     },
     {
         image: 'WarningSigns-Sprite.png',
@@ -339,7 +381,8 @@ const mainObj = [{
         text: "blue",
         link: "",
         x: "0px",
-        y: "-2450px"
+        y: "-2450px",
+        info: "This is the info for this image"
     }
 ];
 
@@ -406,37 +449,79 @@ imgTemplate(mainObj);
 const divs = document.querySelectorAll('.div-colours');
 let arrayDivsFilter = [];
 let arrayDivs = [];
+const divInfo = document.createElement("div");
+divInfo.id = "info";
 
 function newTest() {
-
     for (let i = 0; i < divs.length; i++) {
         arrayDivs.push(divs[i]);
         divs[i].addEventListener("click", function () {
             let divOftop = this.offsetTop;
+            // console.log(this);
             arrayDivsFilter = arrayDivs.filter(array => array.offsetTop == divOftop);
-            console.log(arrayDivsFilter);
+            // console.log(arrayDivsFilter);
             last(arrayDivsFilter);
 
+            for(var i = 0; i < mainObj.length; i++) {
+                if(this.firstChild.style.backgroundPositionY ==  mainObj[i].y) {
+
+                    divInfo.innerHTML = "<p>"+  mainObj[i].info + "</p>"; 
+
+            }
+       
+            }
         });
     }
 }
 
-
 newTest();
 
 
-function createDivInfo() {
-	const divInfo = document.createElement("div");
-	divInfo.innerHTML = "<p>Info</p>";
-}
-
 function last(array) {
     const lastItem = array[array.length - 1];
-    console.log(lastItem);
-    const divInfo = document.createElement("div");
-	divInfo.innerHTML = "<p>Info</p>";
     lastItem.parentNode.insertBefore(divInfo, lastItem.nextSibling);
+
 }
 
-//  adun toate divurile care au clasa de div inner si apoi atasez un event hadeler pe element si apoi sortez daca cumva
-//in colectie offtopul e cel care e match cu cel al celui clickuit impingele
+
+ 
+let nb;
+
+
+// nr total de divuri
+const no_total_div = document.querySelectorAll('.div-colours').length;
+// console.log(no_total_div);
+
+//width of innerDiv
+let width_1_inner_div = parseInt(document.querySelector('.div-colours').offsetWidth);
+// console.log(width_1_inner_div);
+
+//full width of element with margin
+let inner_div_m = document.querySelector('.div-colours').currentStyle || window.getComputedStyle(document.querySelector('.div-colours')); //citeste ce style au divurile
+width_1_inner_div = width_1_inner_div + parseInt(inner_div_m.marginLeft) + parseInt(inner_div_m.marginRight); // latimea divurilor plus paddingul
+// console.log(width_1_inner_div);
+
+//width of container
+const wrapperWidth = parseInt(wrapper.offsetWidth);
+// console.log(wrapperWidth);
+
+// padding of container
+let c = wrapper.currentStyle || window.getComputedStyle(wrapper); // citeste tot stylul obiectului, tot ce e in css
+let padding_wrapper = parseInt(c.paddingLeft) + parseInt(c.paddingRight); // aduna paddingul lui wrapper
+// console.log(padding_wrapper);
+
+// element per row
+function getNb() {
+    nb = Math.min(parseInt((wrapperWidth - padding_wrapper) / width_1_inner_div),no_total_div);
+    console.log(nb);
+}
+
+
+
+window.onresize = getNb;
+
+
+
+
+
+
