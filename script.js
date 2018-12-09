@@ -4,8 +4,6 @@ const wrapper = document.getElementById('wrapper');
 const infoDiv = document.getElementById('info');
 
 
-// sa ai un object in care adaugi toate divurile, ce contin
-
 const mainObj = [{
         image: 'WarningSigns-Sprite.png',
         colour: "pink",
@@ -485,36 +483,8 @@ function last(array) {
 
 
  
-let nb;
 
 
-// nr total de divuri
-const no_total_div = document.querySelectorAll('.div-colours').length;
-// console.log(no_total_div);
-
-//width of innerDiv
-let width_1_inner_div = parseInt(document.querySelector('.div-colours').offsetWidth);
-// console.log(width_1_inner_div);
-
-//full width of element with margin
-let inner_div_m = document.querySelector('.div-colours').currentStyle || window.getComputedStyle(document.querySelector('.div-colours')); //citeste ce style au divurile
-width_1_inner_div = width_1_inner_div + parseInt(inner_div_m.marginLeft) + parseInt(inner_div_m.marginRight); // latimea divurilor plus paddingul
-// console.log(width_1_inner_div);
-
-//width of container
-const wrapperWidth = parseInt(wrapper.offsetWidth);
-// console.log(wrapperWidth);
-
-// padding of container
-let c = wrapper.currentStyle || window.getComputedStyle(wrapper); // citeste tot stylul obiectului, tot ce e in css
-let padding_wrapper = parseInt(c.paddingLeft) + parseInt(c.paddingRight); // aduna paddingul lui wrapper
-// console.log(padding_wrapper);
-
-// element per row
-function getNb() {
-    nb = Math.min(parseInt((wrapperWidth - padding_wrapper) / width_1_inner_div),no_total_div);
-    console.log(nb);
-}
 
 
 
