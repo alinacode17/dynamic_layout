@@ -1,0 +1,48 @@
+#wrapper {
+	width: 1000px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sign, .sign2 {
+	display: inline-block;
+	width: 227px;
+	height: 192px;
+    background-color: blue;
+    margin-right:  10px;
+}
+
+.div-colours {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: white;
+}
+
+.description {
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.parent {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.txt, .divimg {
+    text-align: center;
+}
+
+.divimg {
+    margin: 0 auto;
+    width: 100px;
+    height: 65px;
+}
+
+@media only screen and (max-width: 800px) {
+    #wrapper {
+    width: 100%;
+    }
+}
